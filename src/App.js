@@ -36,7 +36,10 @@ function App() {
           render={(props) => <Details {...props} />}
         ></Route>
         <Route path="/NewBeer" render={() => <NewBeer />} />
-        <Route path="/RandomBeer" render={() => <RandomBeer />} />
+        <Route
+          path="/RandomBeer"
+          render={(props) => <RandomBeer {...props} />}
+        />
       </Switch>
     </div>
   );

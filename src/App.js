@@ -10,12 +10,11 @@ import HomePage from './components/HomePage';
 function App() {
   return (
     <div className="App">
-      This will be on every page
       <Switch>
-        <Route path='/HomePage' render={() => <HomePage />} />
-        <Route path='/Beers' render={() => <Beers />} />
-        <Route path='/NewBeer' render={() => <NewBeer />} />
-        <Route path='/RandomBeer' render={() => <RandomBeer />} />
+        <Route path="/HomePage" render={() => <HomePage />} />
+        <Route path="/Beers" render={() => <Beers />} />
+        <Route path="/NewBeer" render={() => <NewBeer />} />
+        <Route path="/RandomBeer" render={() => <RandomBeer />} />
       </Switch>
     </div>
   );

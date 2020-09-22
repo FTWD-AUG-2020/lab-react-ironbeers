@@ -6,10 +6,14 @@ function Beers(props) {
   let beers = props.beers.map((eachBeer) => {
     return (
       <div>
-        <li><Link to={`/Beers/${eachBeer._id}`}>{eachBeer.name}</Link></li>
+        <img src={eachBeer.image_url}></img>
+        <li>
+          <Link to={`/Beers/${eachBeer._id}`}>{eachBeer.name}</Link>
+        </li>
+        <p>{eachBeer.description}</p>
       </div>
-    )
-  })
+    );
+  });
   return (
     <div>
       <Link to="/HomePage">

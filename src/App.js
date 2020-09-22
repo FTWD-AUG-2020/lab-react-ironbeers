@@ -19,7 +19,7 @@ function App() {
       setBeers(res.data);
       setLoading(false);
     }
-    getData();
+    getData();    
   }, []);
   return (
     <div className="App">
